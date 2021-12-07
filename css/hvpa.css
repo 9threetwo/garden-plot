@@ -12,6 +12,11 @@
     font-family:  "Segoe Script", sans-serif;
     padding: 1em;
 }
+
+.text_char p{
+    text-indent: 50px;
+}
+
 .topbutton {
     text-decoration: none;
     width:3.90625%;
