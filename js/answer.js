@@ -1,26 +1,26 @@
 let answers = {
     "f" : {
         "description" : "Вам стоит посадить дуб!<br>",
-        "image" : "img/fuf.jpg",
+        "image" : "img/dub.jpg",
     } ,
     "v" : {
-        "description" : "Вы — Вэриан.<br>Поздравляю, вы завалили тест!  Вэриан - добрый и милый малый. Не понимаю, как он попал в данную категорию.",
-        "image" : "img/verian.jpg",
+        "description" : "",
+        "image" : "img/",
     } ,
     "ai" : {
-        "description" : "Вы — Аид.<br>Всемогущий и сильный бог. Поздравляю!",
-        "image" : "img/aid.jpg",
+        "description" : "",
+        "image" : "img/",
     } ,
     "s" : {
-        "description" : "Вы — Шиго.<br>Бесподобная и сногшибательная, в прямом смысле. Поздравляю!",
-        "image" : "img/shego.jpg",
+        "description" : "",
+        "image" : "img/",
     } ,
     "i" : {
         "description" : "Предлагаем посадить фиалку!<br>",
-        "image" : "img/izma.jpg",
+        "image" : "img/fi.jpg",
     } ,
     "m" : {
-        "description" : "Вы — Малефисента.<br>Чистое воплощение зла. Поздравляю!",
-        "image" : "img/malefisenta.jpg",
+        "description" : "",
+        "image" : "img/",
     } ,
 };
