@@ -54,6 +54,5 @@ window.onload = function () {
         reloadButton.classList.add('reload-button');
         document.querySelector('.test').appendChild(reloadButton);
     }
-
     showQuestion();
 }

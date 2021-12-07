@@ -1,26 +1,18 @@
 let answers = {
     "f" : {
-        "description" : "Вам стоит посадить дуб!<br>",
-        "image" : "img/dub.jpg",
+        "description" : "Вы можете посадить дуб, берёзу, клён или голубою ель!",
+        "image" : "img/forest.jpg",
     } ,
     "v" : {
-        "description" : "",
-        "image" : "img/",
+        "description" : "Определённо сажайте маки!",
+        "image" : "img/mak.jpg",
     } ,
     "ai" : {
-        "description" : "",
-        "image" : "img/",
+        "description" : "Как на счёт того, чтобы посадить огурчики или помидорчики?",
+        "image" : "img/ogpom.jpg"
     } ,
     "s" : {
-        "description" : "",
-        "image" : "img/",
-    } ,
-    "i" : {
-        "description" : "Предлагаем посадить фиалку!<br>",
-        "image" : "img/fi.jpg",
-    } ,
-    "m" : {
-        "description" : "",
-        "image" : "img/",
+        "description" : "Сажать можно, что угодно: чернику, малину, яблоню, грушу и даже вишню!",
+        "image" : "img/wow.jpg",
     } ,
 };
