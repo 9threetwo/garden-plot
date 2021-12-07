@@ -1,0 +1,177 @@
+.character{
+    border: solid 3px #333333;
+    float: left;
+    background: -webkit-linear-gradient(90deg, #17120c,#4d3825,#d4a84f);
+    margin: 1em 0;
+}
+.text_char{
+    background: -webkit-linear-gradient(90deg, #d4a84f,#4d3825);
+    overflow: hidden;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    padding: 1em;
+}
+.topbutton {
+    text-decoration: none;
+    width:3.90625%;
+    font-size: 20px;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:3.90625%;
+    right:3.90625%;
+    cursor:pointer;
+    font-family:  "Segoe Script", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 0.625em;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+}
+.topbutton:hover{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background: grey;
+}
+.mySlides {
+    border: #333333 solid 0.5em;
+    display: none;
+    background: linear-gradient(90deg, #6d3f13,#0b5a30, #6d3f13);
+}
+.round {
+    border: 0.2em solid #000;
+    border-radius: 50%;
+    width: 90%;
+    transform: translate(5%, 0px);
+}
+.round:hover {
+    border: 0.25em solid #041f4d;
+    cursor: pointer;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 10px auto 10px;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.post-slider .slider-title{
+    margin: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    color: #6d3f13;
+    text-shadow:  0.0625em 0 0.0625em white,
+    0 0.0625em 0.0625em white,
+    -0.0625em 0 0.0625em white,
+    0 -0.0625em 0.0625em white;
+    font-family: "Segoe Script";
+}
+.post-slider #post-wrapper{
+    widows: 84%;
+    margin: 0 auto;
+    border: 0.0625em solid #000;
+    overflow: hidden;
+}
+.post-slider #post-wrapper .post{
+    margin: 1.5em 0em;
+}
+.prev2.cols.col-1, .next2.cols.col-1{
+    display: table-column;
+}
+.prev2, .next2 {
+    padding-top: 1.25em;
+    text-align: center;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    font-size: 3.5em;
+    transition: 0.6s ease;
+}
+.prev2:hover, .next2:hover {
+    color: lightgoldenrodyellow;
+}
+.img_char{
+    display: block;
+    overflow: hidden;
+    height: 546.5px;
+    margin: 20px auto 20px;
+    display: block;
+}
+.text_3{
+    margin: 0.5em;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+    font-family: "Segoe Script";
+    text-shadow:  0.0625em 0 0.0625em #000,
+    0 0.0625em 0.0625em #000,
+    -0.0625em 0 0.0625em #000,
+    0 -0.0625em 0.0625em #000;
+}
+.text_4{
+    cursor: pointer;
+    margin: 1em;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(90deg, #144528,#834f0a,#353730);
+    color: black;
+    border: solid 2px #333333;
+    font-family: "Segoe Script";
+}
+.row.text_3{
+    background: linear-gradient(90deg, #7a3600,#9e593c,#b8dc50,#9e593c, #7a3600);
+}
+.row.text_4:hover{
+    background-color: yellow;
+}
+.category{
+    font-weight: bolder;
+    margin: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+}
+.category.cols.col-4{
+    text-align: center;
+    border:solid 2px #333333;
+    background: linear-gradient(#cf4138,#95c171);
+    cursor: pointer;
+    font-family: "Segoe Script";
+    font-size: 1em;
+}
+.row.mins_size{
+    margin-top: 1em;
+    display: none;
+}
+.category.cols.col-4.ch1:hover{
+    background: linear-gradient(90deg, #301d2b,#749240,#E5B9B5);
+    color: black;
+}
+.category.cols.col-4.ch2:hover{
+    background: linear-gradient(90deg, #E08BD5,#161D03,#10981B);
+    color: black;
+}
+.category.cols.col-4.ch3:hover{
+    background: linear-gradient(90deg, #94b425,#ac2b33,#041154);
+    color: black;
+}
+.category.cols.col-4.ch4:hover{
+    background: linear-gradient(90deg,#351b6c,#a44ba2,#f28100);
+    color: black;
+}

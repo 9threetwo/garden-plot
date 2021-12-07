@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .text_sl {
+            color: black;
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            font-family:  "Arial Black";
+            text-shadow: 1.5px 1.5px 1.5px white,
+            0 1px 1px white,
+            -1px 0 1px white,
+            0 -1px 1px white;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active {
+            background-color: #717171;
+        }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+    </style>
+    <title>Сад и огород на участке</title>
+    <link href="css/head.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="../Error/extra/slideshow.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="block-body">
+    <div class="conteiner">
+        <div class="row">
+            <div class="top-menu cols col-4">
+                <nav class="mobile">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="bush.html">Деревья и кустарники</a>
+                        <a href="flowers.html">Цветы</a>
+                        <a href="vegetables.html">Овощи</a>
+                        <a href="fruits.html">Фрукты и ягоды</a>
+                        <a href="test.html">Тест</a>
+                    </div>
+                    <div class="menu_2" onclick="openNav()">&#9776;</div>
+                </nav>
+                <nav class="comp">
+                    <ul>
+                        <li class="clickMenu comp_li"><a class="str">РАЗДЕЛЫ</a>
+                            <ul>
+                                <li class="comp_li"><a href="bush.html">Деревья и кустарники</a></li>
+                                <li class="comp_li"><a href="flowers.html">Садовые цветы</a></li>
+                                <li class="comp_li"><a href="vegetables.html">Овощи</a></li>
+                                <li class="comp_li"><a href="fruits.html">Фрукты и ягоды</a></li>
+                                <li class="comp_li"><a href="test.html">Тест</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main_head cols col-8"></div>
+        </div>
+        <div class="row">
+            <div class="text2_2 cols col-12"><i><b>Добро пожаловать на данный сайт!</b><br>Здесь Вы сможете узнать о различных тонкостях при посадке деревьев, кустарников, цветов и других вещей на своём дачном участке, а также сможете открыть для себя что-то новое - узнать о видах растений, которых не знали!</i></div>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <a href="bush.html"><img src="img/one.jpg" style="width:100%"></a>
+                <p><div class="text_sl">Деревья и кустарники</div></p>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <a href="flowers.html"><img src="img/two.jpg" style="width:100%"></a>
+                <div class="text_sl">Садовые цветы</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <a href="vegetables.html"><img src="img/three.jpg" style="width:100%"></a>
+                <div class="text_sl">Овощи</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <a href="bush.html"><img src="img/four.jpg" style="width:100%"></a>
+                <div class="text_sl">Фрукты и ягоды</div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <br>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+        <div class="row">
+            <div class="text_2 cols col-12">ЧТО ВАС ИНТЕРЕСУЕТ?</div>
+        </div>
+        <div class="row">
+            <div class="table_char cols col-3" onclick="window.location.href='bush.html';">ДЕРЕВЬЯ И КУСТАРНИКИ</div>
+            <div class="table_char cols col-3" onclick="window.location.href='flowers.html';">САДОВЫЕ ЦВЕТЫ</div>
+            <div class="table_char cols col-3" onclick="window.location.href='vegetables.html';">ОВОЩИ</div>
+            <div class="table_char cols col-3" onclick="window.location.href='fruits.html';">ФРУКТЫ И ЯГОДЫ</div>
+        </div>
+        <div class="row table_name_char">
+            <div class="name_char cols col-3 bush">
+                <div class="row"><a href="bush.html#klen">Клён</a></div>
+                <div class="row"><a href="bush.html#dub">Дуб</a></div>
+                <div class="row"><a href="bush.html#bereza">Берёза</a></div>
+                <div class="row"><a href="bush.html#mou">Горная сосна</a></div>
+                <div class="row"><a href="bush.html#bluetree">Голубая ель</a></div>
+                <div class="row"><a href="bush.html#siren">Сирень</a></div>
+                <div class="row"><a href="bush.html#zhim">Жимолость</a></div>
+                <div class="row"><a href="bush.html#smorodina">Смородина</a></div>
+                <div class="row"><a href="bush.html#zhasmin">Жасмин</a></div>
+                <div class="row"><a href="bush.html#gort">Гортензия</a></div>
+            </div>
+            <div class="name_char cols col-3 flowers">
+                <div class="row"><a href="flowers.html#fi">Фиалки</a></div>
+                <div class="row"><a href="flowers.html#pi">Пион</a></div>
+                <div class="row"><a href="flowers.html#ba">Бархатцы</a></div>
+                <div class="row"><a href="flowers.html#na">Нарцисс</a></div>
+                <div class="row"><a href="flowers.html#lil">Лилия</a></div>
+                <div class="row"><a href="flowers.html#gla">Гладиолус</a></div>
+                <div class="row"><a href="flowers.html#rose">Роза</a></div>
+                <div class="row"><a href="flowers.html#geo">Георгин</a></div>
+                <div class="row"><a href="flowers.html#land">Ландыши</a></div>
+                <div class="row"><a href="flowers.html#mak">Маки</a></div>
+            </div>
+            <div class="name_char cols col-3 vegetables">
+                <div class="row"><a href="vegetables.html#og">Огурец</a></div>
+                <div class="row"><a href="vegetables.html#tom">Томат</a></div>
+                <div class="row"><a href="vegetables.html#mor">Морковь</a></div>
+                <div class="row"><a href="vegetables.html#sv">Свекла</a></div>
+                <div class="row"><a href="vegetables.html#potato">Картошка</a></div>
+                <div class="row"><a href="vegetables.html#kab">Кабачок</a></div>
+                <div class="row"><a href="vegetables.html#kap">Капуста</a></div>
+                <div class="row"><a href="vegetables.html#tik">Тыква</a></div>
+                <div class="row"><a href="vegetables.html#kyk">Кукуруза</a></div>
+                <div class="row"><a href="vegetables.html#paper">Болгарский перец</a></div>
+            </div>
+            <div class="name_char cols col-3 fruits">
+                <div class="row"><a href="fruits.html#apple">Яблоня</a></div>
+                <div class="row"><a href="fruits.html#pear">Груша</a></div>
+                <div class="row"><a href="fruits.html#sl">Слива</a></div>
+                <div class="row"><a href="fruits.html#peach">Персик</a></div>
+                <div class="row"><a href="fruits.html#ab">Абрикос</a></div>
+                <div class="row"><a href="fruits.html#cherry">Вишня</a></div>
+                <div class="row"><a href="fruits.html#lemon">Лимон</a></div>
+                <div class="row"><a href="fruits.html#al">Алыча</a></div>
+                <div class="row"><a href="fruits.html#mal">Малина</a></div>
+                <div class="row"><a href="fruits.html#cher">Черника</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text_2 text2_1 cols col-12" onclick="window.location.href='test.html';">ПРОЙДИТЕ ТЕСТ И УЗНАЙТЕ, КАКОЕ РАСТЕНИЕ ПОЛУЧИТСЯ ПОСАДИТЬ НА ВАШЕМ УЧАСТКЕ!</div>
+        </div>
+    </div>
+</div>
+<script src="../Error/extra/slideshow.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+html{
+    background: linear-gradient(#1E524E, #6CFF95);
+}
+* {box-sizing:border-box}
+#block-body {
+    width: 100%;
+    margin: 0.4em auto;
+    height: auto;
+}
+
+#block-content {
+    width: 100%;
+    height: auto;
+}
+.main_head{
+    width: 100%;
+    height: 80px;
+    background-image: url('../img/logo.png');
+}
+
+.hero_head{
+    padding: 0;
+    height: 100%;
+    background-color: #545434;
+    text-align: center;
+    font-size: 4.5em;
+    color: #000;
+    font-family:  "Mistral", sans-serif;
+}
+.top-menu {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em 0 0 0.4em;
+    -webkit-border-radius: 0.4em 0 0 0.4em;
+}
+.top-menu .comp_li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: black;
+    height: 100%;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em 0 0 0.4em;
+    -webkit-border-radius: 0.4em 0 0 0.4em;
+}
+.top-menu .comp_li a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background: linear-gradient(90deg, #ff4420, #ddee44);
+}
+.block-top-auth {
+    width: 100%;
+    float: left;
+    margin-left: 3.125%;
+    height: 80px;
+}
+.block-top-auth p {
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.block-top-auth a {
+    color: white;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 0.9375em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-top-auth a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    color: #00ADE4;
+}
+.clickMenu{
+    width: 30%;
+    border-radius: 1em;
+    -moz-border-radius: 0.5em 0 0 0.5em;
+    -webkit-border-radius: 0.5em 0 0 0.5em;
+}
+.clickMenu .str:after
+{
+    content:'\00A0 \00A0 \21B5';
+}
+
+.clickMenu:hover .str:after
+{
+    content:'\00A0 \00A0 \21E7';
+}
+.mobile{
+    text-align: center;
+    display: none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#6b8627,#a01a3f,#684519);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: underline;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    transition: 0.3s;
+
+}
+.sidenav div a {
+    padding: 8px 8px 16px 32px;
+    text-decoration:underline;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    transition: 0.3s;
+
+}
+.sidenav a:hover{
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu_2{
+
+    cursor:pointer;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    background: linear-gradient(90deg, #a21b12,#545434);
+    color: black;
+    font-weight: bolder;
+    height: 82px;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em 0 0 0.4em;
+    -webkit-border-radius: 0.4em 0 0 0.4em;
+}
+
+
+.comp ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    border-radius: 1em;
+    -moz-border-radius: 0.5em 0 0 0.5em;
+    -webkit-border-radius: 0.5em 0 0 0.5em;
+}
+.comp ul li {
+    margin: 0;
+    background: linear-gradient(90deg, #a21b12,#545434);
+    position: absolute;
+    border-radius: 1em;
+    -moz-border-radius: 0.5em 0 0 0.5em;
+    -webkit-border-radius: 0.5em 0 0 0.5em;
+}
+.comp ul ul {
+    display: none;
+    position: relative;
+    top: 100%;
+}
+
+.comp ul li:hover > ul {
+    display: block;
+    background-color: black;
+    z-index: 1000;
+}
+.comp ul ul li {
+    display:list-item;
+    position: relative;
+}
+
+.main{
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(90deg, #545434, #a21b12);
+    width: auto;
+    height: 82px;
+    padding-top: 5px;
+    border-radius: 0 0.8em 0.8em 0;
+    -moz-border-radius: 0 0.4em 0.4em 0;
+    -webkit-border-radius: 0 0.4em 0.4em 0;
+
+}
+
+.main:hover{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background: linear-gradient(90deg, #ddee44,#ff4420);
+}
+
+/*.image-wrap{*/
+/*    width:800px;*/
+/*    height: 400px;*/
+/*    border: 0px solid;*/
+/*}*/
+
+/*.image-align{*/
+/*    text-align: center;*/
+/*}*/
+
+/*.image-center{*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.centerimg {*/
+
+/*    text-align: right;*/
+/*    height: 335px;*/
+/*    width: 50%;*/
+/*    vertical-align: middle;*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.pic {*/
+/*    background-color: deeppink;*/
+/*    color: black;*/
+/*    width: 500px;*/
+/*    text-align: justify;*/
+/*    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.99);*/
+/*    padding: 20px 10px;*/
+/*    font-weight: bold;*/
+/*    margin: 10px auto 10px;*/
+/*}*/

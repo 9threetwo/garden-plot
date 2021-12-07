@@ -1,0 +1,174 @@
+.text_2{
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: black;
+    background: linear-gradient(#A4DB79, #E9EE73);
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border: solid 3px #333333;
+
+}
+.text2_1{
+    cursor: pointer;
+    height: 55px;
+    padding: 15px 8px 0;
+    text-align: center;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 1.3em;
+    color: yellow;
+    margin: 15px;
+    font-weight: bolder;
+    background: #3A0F2D;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border: solid 3px #3A0F2D ;
+}
+
+.text2_2{
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: black;
+    background: linear-gradient( #9f4f3a,#cb6133,#617b4e);
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border: solid 5px #333333;
+}
+
+.row .text2_1.cols{
+    margin: 0 0 1em;
+}
+.table_char{
+    cursor: pointer;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family:  "Segoe Script", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(#EFFF70, #EFFE85, #EFFE65);
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border: solid 3px #333333;
+}
+.table_char:hover{
+
+    background: linear-gradient(90deg, #BB256C, #E44429, #CA335D);
+    border: solid 2px black;
+
+}
+.wrapper {
+    margin: 10px auto 10px;
+    height: auto;
+}
+.row .name_char{
+    text-decoration: none;
+    text-align: center;
+    font-family:  "Monotype Corsiva", sans-serif;
+    font-size: 3em;
+    color: white;
+}
+.name_char .row{
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    padding: 0.5em;
+    margin: 0 auto;
+}
+.table_name_char{
+    padding-bottom: 0.5em;
+    background: linear-gradient(#EFFE65, #C76646, #3A0F2D);
+}
+.name_char a {
+    color:black;
+    text-decoration:none
+}
+
+.name_char a:active {
+    color:black;
+    text-decoration:none
+}
+
+.name_char a:visited {
+    color:black;
+    text-decoration:none
+}
+
+.name_char a:hover {
+    color: purple;
+    text-decoration: underline
+}
+
+.row.table_name_char .name_char.cols.col-3 .row{
+    display: table;
+    height: 100%;
+}
+
+.row.table_name_char{
+
+    border-top: 2px #333333 solid;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+}
+.main_text{
+    text-align: center;
+    font-size: 1.7em;
+    text-decoration: none;
+    font-family:  "Monotype Corsiva", sans-serif;
+    border: #333333 solid 0.3em;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient( #9f4f3a,#cb6133,#617b4e);
+    color: black;
+    width: 500px;
+    /*box-shadow: 0px 0px 10px 5px #333333;*/
+    font-weight: bold;
+    margin: 10px auto 10px;
+}
+a{
+    text-decoration: none;
+}
+.text {
+    text-align: center;
+    color: black;
+    font-family: "Segoe Script";
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 3em;
+    margin: auto;
+    display: block;
+    border:#333333 2px solid;
+    background: linear-gradient(#617b4e, #A4DB79);
+    width: 2050px;
+    height: 80px;
+}
+
+.mySlides2{
+    width:700px;
+    height: 300px;
+    border: 0px solid;
+}
+
+.fade_f{
+    text-align: center;
+}
+
+.centerimg{
+    display: block;
+    margin: auto;
+}

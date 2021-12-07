@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bush</title>
+    <link href="css/head.css" rel="stylesheet" type="text/css">
+    <link href="css/hvpa.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/bush.js"></script>
+</head>
+<body>
+<div class="conteiner">
+    <div class="row">
+        <div class="top-menu cols col-4">
+            <nav class="mobile">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="row"><a href="#klen"  onclick="closeNav()">Клён</a></div>
+                    <div class="row"><a href="#dub"  onclick="closeNav()">Дуб</a></div>
+                    <div class="row"><a href="#bereza"  onclick="closeNav()">Берёза</a></div>
+                    <div class="row"><a href="#mou"  onclick="closeNav()">Горная сосна</a></div>
+                    <div class="row"><a href="#bluetree"  onclick="closeNav()">Голубая ель</a></div>
+                    <div class="row"><a href="#siren"  onclick="closeNav()">Сирень</a></div>
+                    <div class="row"><a href="#zhim"  onclick="closeNav()">Жимолость</a></div>
+                    <div class="row"><a href="#smorodina"  onclick="closeNav()">Смородина</a></div>
+                    <div class="row"><a href="#zhasmin"  onclick="closeNav()">Жасмин</a></div>
+                    <div class="row"><a href="#gort"  onclick="closeNav()">Гортензия</a></div>
+                </div>
+                <div class="menu_2" onclick="openNav()">&#9776;</div>
+            </nav>
+            <nav class="comp">
+                <ul>
+                    <li class="clickMenu comp_li"><a class="str">САД И ОГОРОД НА УЧАСТКЕ</a>
+                        <ul>
+                            <li class="comp_li"><a href="bush.html">Деревья и кустарники</a></li>
+                            <li class="comp_li"><a href="flowers.html">Садовые цветы</a></li>
+                            <li class="comp_li"><a href="vegetables.html">Овощи</a></li>
+                            <li class="comp_li"><a href="fruits.html">Фрукты и ягоды</a></li>
+                            <li class="comp_li"><a href="test.html">Тест</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cols col-7 hero_head "><b>ДЕРЕВЬЯ И КУСТАРНИКИ</b></div>
+        <div class="cols col-1 main" onclick="window.location.href = 'index.html';">НА ГЛАВНУЮ</div>
+    </div>
+    <div class="row mins_size">
+        <div class="row cols col-12 text_4" onclick="window.location.href = 'test.html';">ПРОЙДИТЕ ТЕСТ</div>
+        <div class="row cols col-12 text_3">ДРУГИЕ РАЗДЕЛЫ:</div>
+        <div class="row">
+            <div class="category cols col-4 ch2" onclick="window.location.href = 'flowers.html';">САДОВЫЕ ЦВЕТЫ</div>
+            <div class="category cols col-4 ch3" onclick="window.location.href = 'vegetables.html';">ОВОЩИ</div>
+            <div class="category cols col-4 ch4" onclick="window.location.href = 'fruits.html';">ФРУКТЫ И ЯГОДЫ</div>
+        </div>
+    </div>
+    <div class="row post-slider">
+        <div class="row">
+            <h2 class="slider-title">БЫСТРЫЙ ПРОСМОТР</h2>
+        </div>
+        <div class="row">
+            <div class="prev2 cols col-1" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="cols col-10" id="post-wrapper"></div>
+            <div class="next2 cols col-1" onclick="plusSlides(1)">&#10095;</div>
+        </div>
+    </div>
+    <div class="row cols col-12" id="characters"></div>
+    <div class="row"><a href="#" class="topbutton">&#8679;</a></div>
+    <script type="text/javascript" src="js/filljavascr.js"></script>
+    <script type="text/javascript" src="js/filljavaslider.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+</div>
+</body>
+</html>
